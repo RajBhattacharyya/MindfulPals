@@ -1,0 +1,152 @@
+/* LandingPage.css */
+
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.container-top {
+  background: rgba(255, 199, 199, 0.247);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
+  width: 1350px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container-top {
+    width: 1350px;
+  }
+}
+
+.Logo {
+  font-size: 5.5rem;
+  color: white;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.Logo, p {
+  margin-left: 50px;
+}
+
+.start3 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  font-size: 80px;
+}
+
+.start2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.spline-container {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  z-index: 10;
+}
+
+.quote {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 70%;
+  left: 68%;
+  z-index: 10;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.get-started {
+  top: 0;
+  left:0;
+  position: absolute;
+  height: 35px;
+  width: 200px;
+  margin-top: 30%;
+  margin-left: 10%;
+  background: rgba(37, 153, 151, 0.411);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
+  transition: all 0.3s ease;
+}
+
+.get-started:hover {
+  transform: scale(1.05);
+  background: rgba(203, 218, 217, 0.411);
+}
+
+
+.start {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color:#1D2B53;
+  font-size:1.3rem;
+  font-weight: 600;
+}
+.top-right-buttons {
+  top: 0;
+  left:0;
+  position: absolute;
+  height: 35px;
+  width: 200px;
+  margin-top: 30%;
+  margin-left: 30%;
+  background: rgba(39, 98, 97, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
+  transition: all 0.3s ease;
+}
+
+.top-right-buttons:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(10, 81, 97, 0.686),
+    0 0 15px rgba(239, 243, 246, 0.592);
+    background: rgba(203, 218, 217, 0.411);
+}
+.about-us {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color:#1D2B53;
+  font-size:1.3rem;
+  font-weight: 600;
+}
+/* End of LandingPage.css */

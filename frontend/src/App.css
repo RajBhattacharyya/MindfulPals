@@ -1,0 +1,14 @@
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #4CA1AF; 
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
+
+}
+
+.header {
+  height: 100vh;
+}
