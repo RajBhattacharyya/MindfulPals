@@ -127,6 +127,3 @@ Generates responses using a generative chat model.
     "text": "Generated response from the virtual assistant"
   }
   ```
-
-
-This project is licensed under the [MIT License](LICENSE). Enjoy coding and spreading positivity! 🌈
