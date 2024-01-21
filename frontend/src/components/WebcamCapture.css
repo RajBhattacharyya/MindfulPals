@@ -67,12 +67,12 @@
     background: gray;
     box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
               0 0 10px rgba(239, 243, 246, 0.592);
-    width: 35rem;
+    width: 37rem;
     font-size: larger;
   }
 
   .next-page-btn {
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 600;
     padding: 10px 20px;
     border: none;

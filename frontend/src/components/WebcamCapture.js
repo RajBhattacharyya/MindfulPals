@@ -12,12 +12,24 @@ const WebcamCapture = () => {
   const [isCapturing, setIsCapturing] = useState(false);
   const intervalIdRef = useRef(null);
   const [petResponseImageUrl, setPetResponseImageUrl] = useState(null);
+  const [chatMessage, setChatMessage] = useState("It's a wonderful day, let's your buddy detect your emotion. Press start capturing.");
 
   const imageUrls = [
     "https://media2.giphy.com/media/Xq2dHBndWUEtU2gZyp/giphy.gif",
     "https://media1.giphy.com/media/hDAGXIVNI0v0vQamCF/giphy.gif",
     "https://media2.giphy.com/media/S2gLtPdALesjLz7Yib/giphy.gif",
   ];
+  // Customize chat message based on emotionLabel
+  const getChatMessage = (emotion) => {
+    if (emotion === "Happy") {
+      setChatMessage("You look happy! Want to share your joy?");
+    } else if (emotion === "Sad") {
+      setChatMessage("You seem a bit sad. Would you like to talk about it?");
+    } else if (emotion === "Neutral") {
+      setChatMessage("You look calm and neutral. Anything on your mind?");
+    }
+  }
+  
 
   const getImageUrlForEmotion = (emotion) => {
     const emotionImageMap = {
@@ -37,6 +49,7 @@ const WebcamCapture = () => {
   useEffect(() => {
     console.log("Emotion Label changed:", emotionLabel);
     setPetResponseImageUrl(getImageUrlForEmotion(emotionLabel));
+    getChatMessage(emotionLabel);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [emotionLabel]);
   
@@ -158,7 +171,7 @@ const WebcamCapture = () => {
       </div>
       <div className="next-page">
         <div className="chat_I">
-          <p>You seems to be a little upset want to share your feelings</p>
+          <p>{chatMessage}</p>
         </div>
         <button className="next-page-btn" onClick={handleChatClick}>Interact with your pet</button>
       </div>
