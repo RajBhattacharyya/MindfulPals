@@ -48,7 +48,7 @@ const Chat = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/messages');
+      const response = await axios.get('https://mindfulpals-user-backend.onrender.com/api/messages');
       setMessages(response.data);
     } catch (error) {
       console.error('Error fetching messages:', error);
@@ -57,7 +57,7 @@ const Chat = () => {
 
   const sendMessage = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/messages', { text: newMessage });
+      const response = await axios.post('https://mindfulpals-user-backend.onrender.com/api/messages', { text: newMessage });
       const newMessageData = response.data;
 
       // Add the new message and response to the messages array

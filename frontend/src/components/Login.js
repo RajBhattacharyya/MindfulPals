@@ -13,7 +13,7 @@ export default function Login() {
   const { login } = useAuth();
   const [seePassword, setSeePassword] = useState(false);
 
-  const host = "http://localhost:5000";
+  const host = "https://mindfulpals-user-backend.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

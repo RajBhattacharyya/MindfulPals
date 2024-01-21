@@ -19,7 +19,7 @@ export default function Signup() {
   const [seePassword, setSeePassword] = useState(false);
   const [seePasswordConfirm, setSeePasswordConfirm] = useState(false);
 
-  const host = "http://localhost:5000";
+  const host = "https://mindfulpals-user-backend.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
