@@ -1,0 +1,118 @@
+/* Login.css */
+
+.glass-morphism-container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.glass-morphism-form-login {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+    0 0 10px rgba(239, 243, 246, 0.592);
+  width: 88vw;
+  height: 500px;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.glass-morphism-form-login-inside {
+  display: flex;
+  gap: 6.5em; /* You can adjust the gap as needed */
+  border-radius: 12px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #072c51ea;
+  margin-left: 30%;
+}
+
+.form-start {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Adjust the gap as needed */
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .glass-morphism-form-login {
+    width: 850px;
+  }
+}
+
+.login_cat {
+  height: 300px;
+  width: 300px;
+}
+
+.form-email {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-pass {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.auth_input {
+  border: 2px solid #000; /* Black border */
+  border-radius: 8px; /* Optional: add border-radius for rounded corners */
+  padding: 8px; /* Optional: add padding for better appearance */
+  outline: none; /* Optional: remove the default blue outline */
+  width: 300px;
+  color: #072c51ea;
+}
+
+/* Add the following style to change the color of the text inside the input fields */
+.auth_input::placeholder {
+  color: #888; /* Optional: change the placeholder text color */
+}
+
+.submit {
+  background: rgba(123, 136, 198, 0.556); /* Translucent white background */
+  border: 2px solid #000; /* Black border */
+  border-radius: 8px; /* Optional: add border-radius for rounded corners */
+  padding: 8px 20px; /* Optional: add padding for better appearance */
+  color: #000; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  backdrop-filter: blur(10px); /* Background blur */
+  transition: background 0.3s ease; /* Optional: add transition for smooth effect */
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+    0 0 10px rgba(239, 243, 246, 0.592);
+  width: 93%;
+}
+
+.submit:hover {
+  background: rgba(255, 255, 255, 0.3); /* Adjust the translucency on hover */
+}
+
+.login-link p a {
+  color: #072c51ea; /* Dark blue color */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold; /* Optional: add font weight for emphasis */
+}
+
+.login-link p a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.eye {
+  margin-left: 5.5px;
+}

@@ -1,0 +1,34 @@
+/* Footer.css */
+
+.glass-morphism-footer {
+    background: linear-gradient(to right, #4b6cb7, #182848); /* Set your gradient colors */
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 1309px;
+    height: 0px;
+    text-align: center;
+    margin-top: 240px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+  }
+  
+  .social-links {
+    font-size: 27px;
+    margin-bottom: 40px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px; /* Adjust spacing between links */
+    margin-bottom: 30px;
+  }
+  
+  /* Add other styles as needed */
+  

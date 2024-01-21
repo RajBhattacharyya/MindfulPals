@@ -39,7 +39,7 @@ export default function LandingPage() {
       <div className="container">
         <div className="container-top">
           <p className="start3">LET'S CHAT</p>
-          <p className="start2">with the souls who would never break your heart</p>
+          <p className="start2">with buddies who would never break your heart</p>
           <div className="Logo">
             <span ref={el}></span>
           </div>

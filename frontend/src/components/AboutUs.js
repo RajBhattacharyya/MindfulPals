@@ -8,7 +8,7 @@ export default function AboutUs() {
     <div className="about-us-container">
       <div className="about-us-content">
         <h1>Welcome to Our Pet Simulator</h1>
-        <p>
+        <p >
           At PET-SIMULATOR, we bring you a unique and interactive experience that blends
           cutting-edge technology with the joy of pet companionship. Our journey began with a simple idea:
           to create a virtual environment where users can connect with virtual pets using facial recognition
@@ -30,7 +30,7 @@ export default function AboutUs() {
           and expanding our features, bringing more joy and companionship to your virtual pet experience.
           Get ready to embark on a unique journey with your digital furry friend!
         </p>
-        <div className='img'><img className="cat-1" src={cat} alt='cat-img' height ={"360px"} /></div>
+        <div className='img'><img className="cat-1" src={cat} alt='cat-img' height ={"300px"} /></div>
       </div>
       
       <img className="cat-2" src={cat2} alt='cat-img2' height ={"470px"} />

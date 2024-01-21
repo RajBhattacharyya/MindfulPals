@@ -29,8 +29,12 @@
 }
 
 .Logo {
-  font-size: 5.5rem;
-  color: white;
+  font-size: 4.3rem;
+  background-image: linear-gradient(to right, #3b44f1, #ffcc00); 
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
   height: 200px;
   width: 100%;
   margin-top: 50px;
@@ -44,13 +48,15 @@
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   margin-top: 50px;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .start2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
-  font-size: larger;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
 }
 
 .spline-container {
