@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Virtual Pet Therapy Frontend 🚀🐾
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Virtual Pet Therapy Frontend, a React-based application for providing a virtual companion and therapy for kids! This frontend is designed to interact with the backend API and offer a seamless and delightful user experience.
 
-## Available Scripts
+## Setup 🌐✨
 
-In the project directory, you can run:
+1. **Clone the Repository:**
 
-### `npm start`
+   ```bash
+   git clone https://github.com/your-username/virtual-pet-therapy-frontend.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Install Dependencies:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. **Start the Application:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+   The application will be accessible at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features 🎉
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Virtual Companion:** Interact with a virtual companion that responds to your emotions.
+- **User Authentication:** Securely login, create an account, and view personalized user details.
+- **Generative Chat:** Engage in therapeutic conversations with a generative chat model.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure 📁
 
-### `npm run eject`
+```
+src
+|-- components
+|   |-- Companion.js
+|   |-- AuthForm.js
+|   |-- UserProfile.js
+|-- context
+|   |-- AuthContext.js
+|-- pages
+|   |-- Home.js
+|   |-- Login.js
+|   |-- Signup.js
+|   |-- UserProfilePage.js
+|-- App.js
+|-- index.js
+|-- index.css
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Components 🧩
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. `Companion.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Displays the virtual companion and handles emotion interactions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. `AuthForm.js`
 
-## Learn More
+Reusable component for user authentication forms (login and signup).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. `UserProfile.js`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Displays user profile details.
 
-### Code Splitting
+## Context 🌐
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `AuthContext.js`
 
-### Analyzing the Bundle Size
+Provides authentication context using React Context API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Pages 📄
 
-### Making a Progressive Web App
+### 1. `Home.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Homepage displaying the virtual companion and user interactions.
 
-### Advanced Configuration
+### 2. `Login.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Login page with the authentication form component.
 
-### Deployment
+### 3. `Signup.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Signup page with the authentication form component.
 
-### `npm run build` fails to minify
+### 4. `UserProfilePage.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User profile page displaying user details.
+
+## Contributing 🤝
+
+We welcome contributions from the community! Feel free to submit issues, feature requests, or pull requests.
+
+## License 📝
+
+This project is licensed under the [MIT License](LICENSE). Enjoy building and bringing joy to kids! 🌟
