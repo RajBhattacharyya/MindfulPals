@@ -1,17 +1,3 @@
-# Project Name 🚀
-
-## MindfulPals 🐾😊
-
-### Introduction 🌟
-
-Welcome to the Virtual Pet Therapy for Kids project! This open-source initiative aims to bring joy to the lives of kids who may feel lonely, restricted at home, or prefer introverted activities. By combining emotion recognition using machine learning with the charm of virtual pets, our project provides a therapeutic and entertaining experience for young users.
-
-### Features 🎉
-
-- **Emotion Recognition:** Utilizes advanced machine learning to identify emotions through real-time facial expressions.
-- **Virtual Pet Interaction:** Offers a delightful virtual pet that responds to the user's emotions, providing companionship and entertainment.
-- **API for Integration:** Exposes a user-friendly API endpoint (`/api/send_frame`) to seamlessly integrate with various applications for emotion recognition.
-
 ### Getting Started 🚀
 
 To set up the project on your local machine, follow these steps:
@@ -19,7 +5,7 @@ To set up the project on your local machine, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/virtual-pet-therapy.git
+   https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
 2. **Install Dependencies:**
