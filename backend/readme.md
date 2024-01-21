@@ -128,10 +128,5 @@ Generates responses using a generative chat model.
   }
   ```
 
-## Contributing 🤝
-
-We welcome contributions from the community! Feel free to submit issues, feature requests, or pull requests.
-
-## License 📝
 
 This project is licensed under the [MIT License](LICENSE). Enjoy coding and spreading positivity! 🌈
