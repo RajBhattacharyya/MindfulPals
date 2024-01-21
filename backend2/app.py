@@ -7,7 +7,7 @@ import numpy as np
 from keras.models import load_model
 from emotion import predict_emotion  # Import the function from emotion_utils
 
-app = Flask(name)
+app = Flask(__name__)
 CORS(app)
 
 face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
@@ -40,9 +40,11 @@ def send_frame():
         label_position = (x, y)
         cv2.putText(image_np, emotion_label, label_position, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
+    # No need to display the frame using cv2.imshow
+
     print("Emotion:", emotion_label)
 
     return {'status': 'success', 'emotion': emotion_label}
 
-if name == 'main':
+if __name__ == 'main':
     app.run(debug=True, host="0.0.0.0")
