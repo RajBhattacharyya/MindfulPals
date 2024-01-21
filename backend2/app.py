@@ -22,7 +22,7 @@ public_url = ngrok.connect(port_no).public_url
 print(public_url)
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
@@ -61,5 +61,5 @@ def send_frame():
 
     return {'status': 'success', 'emotion': emotion_label}
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port_no)
