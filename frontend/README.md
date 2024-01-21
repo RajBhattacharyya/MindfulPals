@@ -5,16 +5,9 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 ## Setup 🌐✨
 
 1. *Clone the Repository:*
-
-<<<<<<< HEAD
    ```bash
    git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
-=======
-   bash
-   git clone https://github.com/RajBhattacharyya/MindfulPals.git
-   
->>>>>>> 2e7534ea1cdca2b3f6ea619e9377eda465644299
 
 2. *Install Dependencies:*
 
@@ -38,7 +31,7 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 
 ## Project Structure 📁
 
-
+```
 src
 |-- components
 |   |-- AboutUs.js
@@ -64,11 +57,7 @@ src
 |-- index.js
 |-- index.css
 |-- App.css
-<<<<<<< HEAD
 ```
-=======
-
->>>>>>> 2e7534ea1cdca2b3f6ea619e9377eda465644299
 
 ## Components 🧩
 
