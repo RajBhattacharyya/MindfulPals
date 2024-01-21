@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/DON2604/MindfulPals/assets/89240074/a2dbf7f2-a49b-4664-8bb9-23d5be23f944" height="200px" width="200px">
+</p>
+
 # MindfulPals 🚀🐾
 
 Welcome to the MindfulPals, Virtual Pet Therapy Project! Our open-source initiative is dedicated to providing a virtual companion and therapeutic experience for kids who may feel lonely or prefer introverted activities or just want to share emotion. The project integrates emotion recognition using machine learning, tensorflow and Scikit-Learn with a React-based frontend and a supportive generative chat model to create a holistic and engaging environment for users.
