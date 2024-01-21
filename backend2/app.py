@@ -5,9 +5,16 @@ from flask import Flask, request
 from flask_cors import CORS
 import numpy as np
 from keras.models import load_model
-from emotion import predict_emotion  # Import the function from emotion_utils
+from emotion import predict_emotion 
+from pyngrok import ngrok
 
-app = Flask(__name__)
+port_no=5000
+ngrok.set_auth_token("2bGa6tBR6FBvA03HhCkht1m0srF_3YYzHG14cqXiarx3XK3NQ")
+public_url = ngrok.connect(port_no).public_url
+print(public_url)
+
+
+app = Flask(_name_)
 CORS(app)
 
 face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
@@ -46,5 +53,5 @@ def send_frame():
 
     return {'status': 'success', 'emotion': emotion_label}
 
-if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
+if _name_ == '_main_':
+    app.run(host='0.0.0.0', port=port_no)
