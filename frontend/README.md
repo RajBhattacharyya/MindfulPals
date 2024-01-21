@@ -4,89 +4,80 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 
 ## Setup 🌐✨
 
-1. **Clone the Repository:**
-
+1. *Clone the Repository:*
    ```bash
-   git clone https://github.com/your-username/virtual-pet-therapy-frontend.git
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
-2. **Install Dependencies:**
+2. *Install Dependencies:*
 
-   ```bash
+   bash
    npm install
-   ```
+   
 
-3. **Start the Application:**
+3. *Start the Application:*
 
-   ```bash
+   bash
    npm start
-   ```
+   
 
-   The application will be accessible at `http://localhost:3000`.
+   The application will be accessible at http://localhost:3000.
 
 ## Features 🎉
 
-- **Virtual Companion:** Interact with a virtual companion that responds to your emotions.
-- **User Authentication:** Securely login, create an account, and view personalized user details.
-- **Generative Chat:** Engage in therapeutic conversations with a generative chat model.
+- *Virtual Companion:* Interact with a virtual companion that responds to your emotions.
+- *User Authentication:* Securely login, create an account, and view personalized user details.
+- *Generative Chat:* Engage in therapeutic conversations with a generative chat model.
 
 ## Project Structure 📁
 
 ```
 src
 |-- components
-|   |-- Companion.js
-|   |-- AuthForm.js
-|   |-- UserProfile.js
-|-- context
-|   |-- AuthContext.js
-|-- pages
-|   |-- Home.js
+|   |-- AboutUs.js
+|   |-- Chatting.js
+|   |-- Headbar.js
+|   |-- LandingPage.js
 |   |-- Login.js
 |   |-- Signup.js
-|   |-- UserProfilePage.js
+|   |-- WebcamCapture.js
+|   |-- Footer.js
+|   |-- AboutUs.css
+|   |-- footer.css
+|   |-- Chatting.css
+|   |-- Headbar.css
+|   |-- LandingPage.css
+|   |-- Login.css
+|   |-- Signup.css
+|   |-- WebcamCapture.css
+|-- context
+|   |-- AuthContext.js
+|   |
 |-- App.js
 |-- index.js
 |-- index.css
+|-- App.css
 ```
 
 ## Components 🧩
 
-### 1. `Companion.js`
+### 1. Companion.js
 
 Displays the virtual companion and handles emotion interactions.
 
-### 2. `AuthForm.js`
+### 2. AuthForm.js
 
 Reusable component for user authentication forms (login and signup).
 
-### 3. `UserProfile.js`
+### 3. UserProfile.js
 
 Displays user profile details.
 
 ## Context 🌐
 
-### `AuthContext.js`
+### AuthContext.js
 
 Provides authentication context using React Context API.
-
-## Pages 📄
-
-### 1. `Home.js`
-
-Homepage displaying the virtual companion and user interactions.
-
-### 2. `Login.js`
-
-Login page with the authentication form component.
-
-### 3. `Signup.js`
-
-Signup page with the authentication form component.
-
-### 4. `UserProfilePage.js`
-
-User profile page displaying user details.
 
 ## Contributing 🤝
 
