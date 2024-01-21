@@ -3,7 +3,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 const fetchuser = (req, res, next) => {
   //Get user from the jwt token and add i to req object
-  const token = req.header("auth-token");
+  const token = req.header("authtoken");
   if (!token) {
     res
       .status(401)

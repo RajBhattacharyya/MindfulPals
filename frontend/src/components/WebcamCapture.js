@@ -37,16 +37,17 @@ const WebcamCapture = () => {
   useEffect(() => {
     console.log("Emotion Label changed:", emotionLabel);
     setPetResponseImageUrl(getImageUrlForEmotion(emotionLabel));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [emotionLabel]);
   
 
   useEffect(() => {
-    // if (!isLoggedIn) {
-    //   // Redirect or handle unauthorized access
-    //   console.log("User not logged in. Redirecting...");
-    //   navigate("/login"); // Redirect to login page
-    //   return;
-    // }
+    if (!isLoggedIn) {
+      // Redirect or handle unauthorized access
+      console.log("User not logged in. Redirecting...");
+      navigate("/login"); // Redirect to login page
+      return;
+    }
 
     const fetchData = async () => {
       try {
@@ -97,11 +98,13 @@ const WebcamCapture = () => {
         clearInterval(intervalIdRef.current);
       }
       if (webcamRef.current && webcamRef.current.srcObject) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         webcamRef.current.srcObject
           .getTracks()
           .forEach((track) => track.stop());
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isCapturing]);
 
   const handleCapturingToggle = () => {
@@ -113,6 +116,11 @@ const WebcamCapture = () => {
       return !prevIsCapturing;
     });
   };
+
+  const handleChatClick = () => {
+    navigate("/chatwithpet");
+  };
+
 
   return (
     <>
@@ -147,6 +155,12 @@ const WebcamCapture = () => {
             {isCapturing ? "Stop Capturing" : "Start Capturing"}
           </button>
         </div>
+      </div>
+      <div className="next-page">
+        <div className="chat_I">
+          <p>You seems to be a little upset want to share your feelings</p>
+        </div>
+        <button className="next-page-btn" onClick={handleChatClick}>Interact with your pet</button>
       </div>
       <div className="pet-response">
         <img

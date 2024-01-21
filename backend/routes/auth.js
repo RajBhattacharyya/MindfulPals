@@ -121,4 +121,18 @@ router.post("/getuser", fetchuser, async (req, res) => {
   }
 });
 
+// ROUTE 4: Logout user using: POST "/api/auth/logout"
+router.post("/logout", fetchuser, (req, res) => {
+  try {
+    // Clear the authentication token cookie
+    res.clearCookie('authtoken');
+
+    // Send a success response
+    res.json({ success: true, message: "Logout successful" });
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal server error");
+  }
+});
+
 module.exports = router;

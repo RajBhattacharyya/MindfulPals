@@ -24,6 +24,7 @@
   
   .record-button button {
     font-size: 16px;
+    font-weight: 700;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -48,4 +49,38 @@
     position: absolute;
     top: 30%;
     right: 10%;
+  }
+
+  .next-page {
+    position: absolute;
+    top: 32%;
+    right: 30%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .chat_I {
+    border-radius: 10px;
+    margin: 1rem;
+    background: gray;
+    box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
+    width: 35rem;
+    font-size: larger;
+  }
+
+  .next-page-btn {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(28, 233, 79, 0.43);
+    color: #000000;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
   }

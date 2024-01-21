@@ -3,8 +3,12 @@ import axios from 'axios';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./Chatting.css"
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Chat = () => {
+  const { isLoggedIn } = useAuth();
+  const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track the current image index
@@ -18,6 +22,12 @@ const Chat = () => {
   ];
 
   useEffect(() => {
+      if (!isLoggedIn) {
+        // Redirect or handle unauthorized access
+        console.log("User not logged in. Redirecting...");
+        navigate("/login"); // Redirect to login page
+        return;
+      }
     // Fetch initial messages
     fetchMessages();
 
@@ -28,6 +38,7 @@ const Chat = () => {
 
     // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

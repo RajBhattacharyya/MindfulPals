@@ -1,5 +1,6 @@
 .head {
     padding: 1.2rem;
+    display: flex;
 }
 
 .techlogo img {
@@ -9,9 +10,34 @@
 }
 
 .headings {
-    margin-top: 2.3rem;
+    margin-top: 1rem;
     margin-left: 7.5rem;
     color: #1D2B53;
     font-size: larger;
 }
 
+.logout-button {
+  height: 25px;
+  width: 70px;
+  margin-top: 1rem;
+  margin-left: 74%;
+  background: rgba(39, 98, 97, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(10, 81, 97, 0.686),
+              0 0 10px rgba(239, 243, 246, 0.592);
+  transition: all 0.3s ease;
+}
+
+.logout {
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: large;
+}
