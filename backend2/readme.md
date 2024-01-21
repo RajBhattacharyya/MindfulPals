@@ -5,7 +5,7 @@ To set up the project on your local machine, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   https://github.com/RajBhattacharyya/MindfulPals.git
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
 2. **Install Dependencies:**
