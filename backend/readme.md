@@ -7,7 +7,7 @@ Welcome to the Auth API, a part of the Virtual Pet Therapy for Kids project! Thi
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/virtual-pet-therapy-api.git
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
 2. **Install Dependencies:**
