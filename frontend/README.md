@@ -7,7 +7,7 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/virtual-pet-therapy-frontend.git
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
 2. **Install Dependencies:**
@@ -35,19 +35,29 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 ```
 src
 |-- components
-|   |-- Companion.js
-|   |-- AuthForm.js
-|   |-- UserProfile.js
-|-- context
-|   |-- AuthContext.js
-|-- pages
-|   |-- Home.js
+|   |-- AboutUs.js
+|   |-- Chatting.js
+|   |-- Headbar.js
+|   |-- LandingPage.js
 |   |-- Login.js
 |   |-- Signup.js
-|   |-- UserProfilePage.js
+|   |-- WebcamCapture.js
+|   |-- Footer.js
+|   |-- AboutUs.css
+|   |-- footer.css
+|   |-- Chatting.css
+|   |-- Headbar.css
+|   |-- LandingPage.css
+|   |-- Login.css
+|   |-- Signup.css
+|   |-- WebcamCapture.css
+|-- context
+|   |-- AuthContext.js
+|   |
 |-- App.js
 |-- index.js
 |-- index.css
+|-- App.css
 ```
 
 ## Components 🧩
@@ -69,24 +79,6 @@ Displays user profile details.
 ### `AuthContext.js`
 
 Provides authentication context using React Context API.
-
-## Pages 📄
-
-### 1. `Home.js`
-
-Homepage displaying the virtual companion and user interactions.
-
-### 2. `Login.js`
-
-Login page with the authentication form component.
-
-### 3. `Signup.js`
-
-Signup page with the authentication form component.
-
-### 4. `UserProfilePage.js`
-
-User profile page displaying user details.
 
 ## Contributing 🤝
 
