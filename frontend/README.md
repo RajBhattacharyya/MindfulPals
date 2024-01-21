@@ -4,35 +4,41 @@ Welcome to the Virtual Pet Therapy Frontend, a React-based application for provi
 
 ## Setup 🌐✨
 
-1. **Clone the Repository:**
+1. *Clone the Repository:*
 
+<<<<<<< HEAD
    ```bash
    git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
+=======
+   bash
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
+   
+>>>>>>> 2e7534ea1cdca2b3f6ea619e9377eda465644299
 
-2. **Install Dependencies:**
+2. *Install Dependencies:*
 
-   ```bash
+   bash
    npm install
-   ```
+   
 
-3. **Start the Application:**
+3. *Start the Application:*
 
-   ```bash
+   bash
    npm start
-   ```
+   
 
-   The application will be accessible at `http://localhost:3000`.
+   The application will be accessible at http://localhost:3000.
 
 ## Features 🎉
 
-- **Virtual Companion:** Interact with a virtual companion that responds to your emotions.
-- **User Authentication:** Securely login, create an account, and view personalized user details.
-- **Generative Chat:** Engage in therapeutic conversations with a generative chat model.
+- *Virtual Companion:* Interact with a virtual companion that responds to your emotions.
+- *User Authentication:* Securely login, create an account, and view personalized user details.
+- *Generative Chat:* Engage in therapeutic conversations with a generative chat model.
 
 ## Project Structure 📁
 
-```
+
 src
 |-- components
 |   |-- AboutUs.js
@@ -58,25 +64,29 @@ src
 |-- index.js
 |-- index.css
 |-- App.css
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> 2e7534ea1cdca2b3f6ea619e9377eda465644299
 
 ## Components 🧩
 
-### 1. `Companion.js`
+### 1. Companion.js
 
 Displays the virtual companion and handles emotion interactions.
 
-### 2. `AuthForm.js`
+### 2. AuthForm.js
 
 Reusable component for user authentication forms (login and signup).
 
-### 3. `UserProfile.js`
+### 3. UserProfile.js
 
 Displays user profile details.
 
 ## Context 🌐
 
-### `AuthContext.js`
+### AuthContext.js
 
 Provides authentication context using React Context API.
 
