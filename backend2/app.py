@@ -7,8 +7,8 @@ import numpy as np
 from keras.models import load_model
 from emotion import predict_emotion  # Import the function from emotion_utils
 
-app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+app = Flask(name)
+CORS(app)
 
 face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 emotion_classifier = load_model(r'model.h5')
@@ -44,5 +44,5 @@ def send_frame():
 
     return {'status': 'success', 'emotion': emotion_label}
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+if name == 'main':
+    app.run(debug=True, host="0.0.0.0")
