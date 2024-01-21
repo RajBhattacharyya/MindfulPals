@@ -88,7 +88,7 @@ const WebcamCapture = () => {
 
                 // Send the frame to the Python Flask server
                 const response = await axios.post(
-                  "https://ac83-103-51-148-35.ngrok-free.app/api/send_frame",
+                  `${process.env.REACT_APP_API_KEY}/api/send_frame`,
                   { frame: imageData }
                 );
 

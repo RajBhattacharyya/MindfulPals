@@ -7,9 +7,17 @@ import numpy as np
 from keras.models import load_model
 from emotion import predict_emotion 
 from pyngrok import ngrok
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve Ngrok authentication token from environment variable
+ngrok_auth_token = os.getenv("NGROK_AUTH_TOKEN")
+if ngrok_auth_token is None:
+    raise ValueError("Ngrok authentication token not found in environment variables.")
 
 port_no=5000
-ngrok.set_auth_token("2bGa6tBR6FBvA03HhCkht1m0srF_3YYzHG14cqXiarx3XK3NQ")
 public_url = ngrok.connect(port_no).public_url
 print(public_url)
 
