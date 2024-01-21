@@ -1,0 +1,83 @@
+/* Chatting.css */
+
+/* Common styles for both sent and received messages */
+.message {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    word-wrap: break-word;
+    max-width: 70%; /* Adjust the maximum width as needed */
+  }
+  
+  /* Styles for sent messages */
+  .message.sent {
+    background-color: #B197FC; /* Adjust the color as needed */
+    align-self: flex-end;
+    color: white;
+    right: 0;
+  }
+  
+  /* Styles for received messages */
+  .message.received {
+    background-color: #82C7E1; /* Adjust the color as needed */
+    align-self: flex-start;
+    color: black;
+    animation: fadeIn 0.5s ease; /* Adjust the text color for received messages */
+  }
+  
+  .chatui {
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 27rem;
+    width: 47%;
+    overflow-y: auto; /* Add this to enable scrolling if messages overflow */
+    margin-right: 20px;
+}
+  
+  .chat_interact {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 48.5%;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #072c51ea;
+    font-weight:600;
+    font-size: large;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .wholechat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .pet-act{
+    position:absolute;
+    top:35%;
+    left:8%
+}

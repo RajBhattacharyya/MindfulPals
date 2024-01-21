@@ -1,0 +1,17 @@
+.head {
+    padding: 1.2rem;
+}
+
+.techlogo img {
+    position: absolute;
+    width: 6.6rem; 
+    height: 6.6rem; 
+}
+
+.headings {
+    margin-top: 2.3rem;
+    margin-left: 7.5rem;
+    color: #1D2B53;
+    font-size: larger;
+}
+
