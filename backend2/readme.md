@@ -53,11 +53,3 @@ To set up the project on your local machine, follow these steps:
    ```
 
 - The application will respond with the detected emotion.
-
-### Contributions Welcome! 🤝
-
-We welcome contributions from the community! Whether it's bug reports, feature requests, or pull requests, your involvement is highly appreciated.
-
-### License 📝
-
-This project is licensed under the [MIT License](LICENSE). Feel free to explore, contribute, and share the joy! 🌈
