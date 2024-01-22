@@ -78,11 +78,3 @@ Displays user profile details.
 ### AuthContext.js
 
 Provides authentication context using React Context API.
-
-## Contributing 🤝
-
-We welcome contributions from the community! Feel free to submit issues, feature requests, or pull requests.
-
-## License 📝
-
-This project is licensed under the [MIT License](LICENSE). Enjoy building and bringing joy to kids! 🌟

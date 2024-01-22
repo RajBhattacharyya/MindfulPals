@@ -7,7 +7,7 @@ Welcome to the Auth API, a part of the Virtual Pet Therapy for Kids project! Thi
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/virtual-pet-therapy-api.git
+   git clone https://github.com/RajBhattacharyya/MindfulPals.git
    ```
 
 2. **Install Dependencies:**
@@ -127,11 +127,3 @@ Generates responses using a generative chat model.
     "text": "Generated response from the virtual assistant"
   }
   ```
-
-## Contributing 🤝
-
-We welcome contributions from the community! Feel free to submit issues, feature requests, or pull requests.
-
-## License 📝
-
-This project is licensed under the [MIT License](LICENSE). Enjoy coding and spreading positivity! 🌈
