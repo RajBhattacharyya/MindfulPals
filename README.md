@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/DON2604/MindfulPals/assets/89240074/a2dbf7f2-a49b-4664-8bb9-23d5be23f944" height="200px" width="200px">
+  <img src="https://github.com/DON2604/MindfulPals/assets/89240074/ca5c8245-bee1-4638-9441-788cfa3819c8" height="200px" width="200px">
 </p>
 
 # MindfulPals 🚀🐾
